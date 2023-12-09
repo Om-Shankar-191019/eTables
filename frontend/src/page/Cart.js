@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import CartProduct from "../component/CartProduct";
-import emptyCartImage from "../assest/empty.gif";
+// import emptyCartImage from "../assest/empty.gif";
 import { toast } from "react-hot-toast";
 import { loadStripe } from "@stripe/stripe-js";
 import { useNavigate } from "react-router-dom";
@@ -100,7 +100,7 @@ const Cart = () => {
         ) : (
           <>
             <div className="flex w-full justify-center items-center flex-col">
-              <img src={emptyCartImage} className="w-full max-w-sm" />
+              {/* <img src={emptyCartImage} className="w-full max-w-sm" /> */}
               <p className="text-slate-500 text-3xl font-bold">Empty Cart</p>
             </div>
           </>
