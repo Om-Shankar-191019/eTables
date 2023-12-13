@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import loginSignupImage from "../assest/login-animation.gif";
+
 import { BiShow, BiHide } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import { ImagetoBase64 } from "../utility/ImagetoBase64";
 import { toast } from "react-hot-toast";
 
+const usericon = "https://cdn-icons-png.flaticon.com/128/456/456212.png";
 const Signup = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
@@ -82,7 +83,7 @@ const Signup = () => {
         {/* <h1 className='text-center text-2xl font-bold'>Sign up</h1> */}
         <div className="w-20 h-20 overflow-hidden rounded-full drop-shadow-md shadow-md m-auto relative ">
           <img
-            src={data.image ? data.image : loginSignupImage}
+            src={data.image ? data.image : usericon}
             className="w-full h-full"
           />
 
